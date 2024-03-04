@@ -15,10 +15,47 @@
 */
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font, 'Inter-Variable'), sans-serif;
   font-variation-settings: 'wght' var(--main-font-weight, 400);
   color: var(--accent-color, #000);
   background-color: var(--background-color, #fff);
+  background-image:
+    repeating-linear-gradient(0deg, var(--stripe-color, #d3d3d3) 0, var(--stripe-color, #d3d3d3) 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(90deg, var(--stripe-color, #d3d3d3) 0, var(--stripe-color, #d3d3d3) 2px, transparent 2px, transparent 4px),
+    linear-gradient(180deg, var(--gradient-start, #e7e7e7) 0.01%, var(--gradient-end, #1a1a1a) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  /*margin-block-start: 102px;*/
+  width: clamp(375px, 100%, 696px);
+  height: 323px;
+  font-family: var(--accent-font, 'Press Start 2P');
+  font-style: normal;
+  font-weight: var(--main-font-weight, 400);
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: var(--background-color, #fff);
+  border: 2px solid var(--accent-color, #000);
+}
+
+.header__title {
+  margin-block-start: 120px;
+  margin-block-end: 20px;
+  font-size: 49px;
+}
+
+.header__subtitle {
+  margin-block-end: 25px;
+  font-size: 14px;
 }
