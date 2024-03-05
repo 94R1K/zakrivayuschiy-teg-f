@@ -15,9 +15,6 @@
 */
 
 .page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font, 'Inter-Variable'), sans-serif;
@@ -37,7 +34,7 @@
 .header {
   display: flex;
   justify-content: center;
-  /*margin-block-start: 100px;*/
+  margin-block-start: 100px;
   width: clamp(375px, 100%, 696px);
   height: 327px;
   font-family: var(--accent-font, 'Press Start 2P');
@@ -52,7 +49,6 @@
 .header__theme-menu {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
   gap: 20px;
 }
@@ -63,15 +59,14 @@
 }
 
 .header__subtitle {
-  margin-block-end: 5px;
+  margin-block-end: 4px;
   font-size: 14px;
 }
 
 .theme-menu__list {
   display: grid;
   justify-items: center;
-  justify-self: center;
-  gap: 14px;
+  gap: 13px;
   font-size: 14px;
 }
 
@@ -84,10 +79,30 @@
 .theme-menu__button:disabled {
   opacity: 0.6;
   position: relative;
+  margin-inline-start: 20px;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
   left: -13px;
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 102px;
+  width: clamp(375px, 100%, 696px);
+  height: 760px;
+  font-style: normal;
+  font-weight: var(--main-font-weight, 400);
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: var(--background-color, #fff);
+  border: 2px solid var(--accent-color, #000);
 }
