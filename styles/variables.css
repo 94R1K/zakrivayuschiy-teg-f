@@ -1,5 +1,5 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+  --color-black: #000;
   --main-font: 'Inter-Variable';
   --accent-font: 'Press Start 2P';
   --main-font-weight: 400;
@@ -9,4 +9,9 @@
   --stripe-color: #d3d3d3;
   --gradient-start: #e7e7e7;
   --gradient-end: #1a1a1a;
+  --button-text-color: #fff;
+  --text-color: var(--color-black, #000);
+  --like-main-body-color: none;
+  --like-contour-color: var(--text-color, #000);
+  --like-sparks-color: #ff0000;
 }
