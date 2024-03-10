@@ -372,12 +372,15 @@
   filter: hue-rotate(80deg) contrast(0.5) blur(1px);
 }
 
-@supports((-webkit-text-stroke-color: var(--background-color, #fff)) or (-webkit-text-stroke-width: 1px)) {
-    .card__watermark {
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: var(--background-color, #fff);
-      text-shadow: none;
-    }
+@supports (
+  (-webkit-text-stroke: 1px var(--background-color, #fff)) or
+    (text-stroke: 1px var(--background-color, #fff))
+) {
+  .card__watermark {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color, #ffffff);
+    text-stroke: 1px var(--background-color, #ffffff);
+  }
 }
 
 @media (width < 376px) {
