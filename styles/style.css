@@ -154,7 +154,7 @@
 .card {
   display: grid;
   justify-content: center;
-  grid-template-rows: 52px 375px 329px;
+  grid-template-rows: min-content 375px 329px;
   /*margin-block-start: 100px;*/
   inline-size: clamp(375px, 100%, 696px);
   /*block-size: clamp(760px, 100%, 959px);*/
