@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="color-scheme" content="light dark">
     <title>Закрывающий тег</title>
     <link rel="icon" href="./images/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" sizes="32x32" href="./images/favicon.svg">
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="./images/favicon.svg">
-    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon.svg">
-    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.svg">
-    <link rel="icon" type="image/svg+xml" sizes="192x192" href="./images/favicon.svg" />
-    <link rel="icon" type="image/svg+xml" sizes="512x512" href="./images/favicon.svg" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.png">
+    <link rel="icon" type="image/svg+xml" sizes="192x192" href="./images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="512x512" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/themes.css">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
       <nav class="theme-menu header__theme-menu">
-        <h1 class="header__title">&lt;/HTML&gt;</h1>
-        <h2 class="header__subtitle">Закрывающий тег</h2>
+        <a class="header__title">&lt;/HTML&gt;</a>
+        <h1 class="header__subtitle">Закрывающий тег</h1>
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button type="button" data-theme="dark" class="button-common theme-menu__button">
               Темно
             </button>
           </li>
@@ -37,13 +37,13 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="button-common theme-menu__button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button type="button" data-theme="light" class="button-common theme-menu__button">
               Светло
             </button>
           </li>
@@ -58,7 +58,7 @@
             class="card__image"
             src="./images/post-image.png"
             alt="Машина"
-          />
+          >
           <span class="card__watermark" aria-hidden="true">&lt;/HTML&gt;</span>
         </div>
         <div class="card__content">
@@ -73,13 +73,14 @@
             <button
               aria-labelledby="article_1_like_button"
               type="button"
-              class="card__icon-button"
+              class="button-common card__icon-button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -108,7 +109,7 @@
             <button
               id="article_1_like_button"
               type="button"
-              class="card__like-button"
+              class="button-common card__like-button"
             >
               <span class="button__text">Like</span>
             </button>
@@ -123,7 +124,7 @@
             class="card__image filter-grayscale"
             src="./images/post-image.png"
             alt="Машина"
-          />
+          >
           <span class="card__watermark" aria-hidden="true">&lt;/HTML&gt;</span>
         </div>
         <div class="card__content">
@@ -139,13 +140,14 @@
             <button
               aria-labelledby="article_2_like_button"
               type="button"
-              class="card__icon-button"
+              class="button-common card__icon-button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -174,7 +176,7 @@
             <button
               id="article_2_like_button"
               type="button"
-              class="card__like-button"
+              class="button-common card__like-button"
             >
               <span class="button__text">Like</span>
             </button>
@@ -189,7 +191,7 @@
             class="card__image filter-saturate"
             src="./images/post-image.png"
             alt="Машина"
-          />
+          >
           <span class="card__watermark" aria-hidden="true">&lt;CSS&gt;</span>
         </div>
         <div class="card__content">
@@ -204,13 +206,14 @@
             <button
               aria-labelledby="article_3_like_button"
               type="button"
-              class="card__icon-button"
+              class="button-common card__icon-button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -239,7 +242,7 @@
             <button
               id="article_3_like_button"
               type="button"
-              class="card__like-button"
+              class="button-common card__like-button"
             >
               <span class="button__text">Like</span>
             </button>
@@ -254,7 +257,7 @@
             class="card__image filter-multiple"
             src="./images/post-image.png"
             alt="Машина"
-          />
+          >
           <span class="card__watermark" aria-hidden="true">&lt;desigions&gt;</span>
         </div>
         <div class="card__content">
@@ -270,13 +273,14 @@
             <button
               aria-labelledby="article_4_like_button"
               type="button"
-              class="card__icon-button"
+              class="button-common card__icon-button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -305,7 +309,7 @@
             <button
               id="article_4_like_button"
               type="button"
-              class="card__like-button"
+              class="button-common card__like-button"
             >
               <span class="button__text">Like</span>
             </button>
@@ -320,7 +324,7 @@
             class="card__image filter-invert"
             src="./images/post-image.png"
             alt="Машина"
-          />
+          >
           <span class="card__watermark" aria-hidden="true">care</span>
         </div>
         <div class="card__content">
@@ -336,13 +340,14 @@
             <button
               aria-labelledby="article_5_like_button"
               type="button"
-              class="card__icon-button"
+              class="button-common card__icon-button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -371,7 +376,7 @@
             <button
               id="article_5_like_button"
               type="button"
-              class="card__like-button"
+              class="button-common card__like-button"
             >
               <span class="button__text">Like</span>
             </button>
@@ -386,7 +391,7 @@
             class="card__image filter-sepia"
             src="./images/post-image.png"
             alt="Машина"
-          />
+          >
           <span class="card__watermark" aria-hidden="true">&lt;support&gt;</span>
         </div>
         <div class="card__content">
@@ -401,13 +406,14 @@
             <button
               aria-labelledby="article_6_like_button"
               type="button"
-              class="card__icon-button"
+              class="button-common card__icon-button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -436,7 +442,7 @@
             <button
               id="article_6_like_button"
               type="button"
-              class="card__like-button"
+              class="button-common card__like-button"
             >
               <span class="button__text">Like</span>
             </button>
@@ -451,7 +457,7 @@
             class="card__image filter-blur"
             src="./images/post-image.png"
             alt="Машина"
-          />
+          >
           <span class="card__watermark" aria-hidden="true">&lt;lifes-style: none;&gt;</span>
         </div>
         <div class="card__content">
@@ -467,13 +473,14 @@
             <button
               aria-labelledby="article_7_like_button"
               type="button"
-              class="card__icon-button"
+              class="button-common card__icon-button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -502,7 +509,7 @@
             <button
               id="article_7_like_button"
               type="button"
-              class="card__like-button"
+              class="button-common card__like-button"
             >
               <span class="button__text">Like</span>
             </button>
@@ -517,7 +524,7 @@
             class="card__image filter-hue-rotate"
             src="./images/post-image.png"
             alt="Машина"
-          />
+          >
           <span class="card__watermark" aria-hidden="true">&lt;experience&gt;</span>
         </div>
         <div class="card__content">
@@ -534,13 +541,14 @@
             <button
               aria-labelledby="article_8_like_button"
               type="button"
-              class="card__icon-button"
+              class="button-common card__icon-button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -569,7 +577,7 @@
             <button
               id="article_8_like_button"
               type="button"
-              class="card__like-button"
+              class="button-common card__like-button"
             >
               <span class="button__text">Like</span>
             </button>
@@ -581,7 +589,7 @@
         type="button"
         onclick="window.modal.showModal();"
         aria-controls="modal"
-        class="button button--save"
+        class="button-common button button--save"
       >
         <svg class="button__icon" viewBox="0 0 29 28">
           <use href="svg/floppy.svg#icon-floppy" />
@@ -597,8 +605,8 @@
         <p>Вставьте дискету, чтобы продолжить</p>
       </div>
       <form method="dialog">
-        <button type="submit" class="button modal__button">
-          <span class="button__text">ок</span>
+        <button type="submit" class="button-common button modal__button">
+          <span class="button__text">ОК</span>
         </button>
       </form>
     </dialog>
