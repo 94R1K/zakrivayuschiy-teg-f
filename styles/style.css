@@ -92,16 +92,13 @@
   content: '';
   position: absolute;
   left: 0;
-  inline-size: 100%;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.theme-menu__button::after {
   bottom: -2px;
   block-size: 2px;
   background-color: currentColor;
   transition: transform 0.3s ease;
+  inline-size: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 .theme-menu__button:focus-visible::after,
@@ -132,53 +129,6 @@
   align-items: center;
   inline-size: 130px;
   padding: 9px 17px;
-}
-
-.button {
-  position: relative;
-  border: 2px solid var(--accent-color, #000);
-  padding: 10px 36px;
-  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
-  font-size: 14px;
-  text-transform: inherit;
-  background: var(--background-color, #fff);
-  transition: box-shadow 0.3s ease;
-  z-index: 1;
-  cursor: pointer;
-  outline: none;
-  appearance: none;
-}
-
-.button:focus {
-  outline: none;
-}
-
-.button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--accent-color);
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: var(--accent-color, #000);
-  transition: transform 0.5s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left;
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-.button__text,
-.button__icon {
-  position: relative;
-  font-family: var(--accent-font, 'Press Start 2P', fantasy);
-  font-size: 14px;
-  line-height: 90%;
-  color: var(--button-text-color, #fff);
-  mix-blend-mode: difference;
-  text-transform: none;
 }
 
 .main {
@@ -247,6 +197,53 @@
   align-items: flex-start;
   gap: 4px;
   block-size: 38px;
+}
+
+.button {
+  position: relative;
+  border: 2px solid var(--accent-color, #000);
+  padding: 10px 36px;
+  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  font-size: 14px;
+  text-transform: inherit;
+  background: var(--background-color, #fff);
+  transition: box-shadow 0.3s ease;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--accent-color, #000);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.button__text,
+.button__icon {
+  position: relative;
+  font-family: var(--accent-font, 'Press Start 2P', fantasy);
+  font-size: 14px;
+  line-height: 90%;
+  color: var(--button-text-color, #fff);
+  mix-blend-mode: difference;
+  text-transform: none;
 }
 
 .button--save {
